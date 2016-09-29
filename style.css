@@ -4,7 +4,7 @@ li{
 .well{
   margin: 0 auto;
 }
-h2, li{
+h2, li, h3, h4{
   text-align:  center;
 }
 ul{

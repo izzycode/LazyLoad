@@ -11,8 +11,8 @@ $(function (){
   })
 });
 function getJSON(){
-  var url = "https://www.stellarbiotechnologies.com/media/press-releases/json?limit="+ limit +"&offset="+ $("#newsList li").length;
-  jQuery.ajax({
+  var url = "http://www.stellarbiotechnologies.com/media/press-releases/json?limit="+ limit +"&offset="+ $("#newsList li").length;
+  $.ajax({
     type: "GET",
     url: url,
     success: function (result){
@@ -37,6 +37,7 @@ function formatDate(dateString){
   return monthList[dateObj.getMonth()] +" "+ dateObj.getDate() +", "+ dateObj.getFullYear() +" - "+ hours +":"+ mins + ampm;
 }
 function displayResult(data){
+  $("#message").hide();
   var listHtml = "";
   for(var x in data){
     listHtml += '<li class="well well-sm" ><a href="#">'+ data[x].title +'<br><i>'+ formatDate(data[x].published) +'</i></a></li>'

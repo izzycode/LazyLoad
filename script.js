@@ -11,7 +11,7 @@ $(function (){
   })
 });
 function getJSON(){
-  var url = "http://www.stellarbiotechnologies.com/media/press-releases/json?limit="+ limit +"&offset="+ $("#newsList li").length;
+  var url = "https://www.stellarbiotechnologies.com/media/press-releases/json?limit="+ limit +"&offset="+ $("#newsList li").length;
   jQuery.ajax({
     type: "GET",
     url: url,

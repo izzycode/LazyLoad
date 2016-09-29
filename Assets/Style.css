@@ -1,0 +1,12 @@
+li{
+  list-style-type: none;
+}
+.well{
+  margin: 0 auto;
+}
+h2, li{
+  text-align:  center;
+}
+ul{
+  padding: 0;
+}
